@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica#1</title>
+    <style>
+        table, th,  td {
+            border: 1px solid black;;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Para poder definir elementos estanderes que se encuentra dentro de las celdas de nuestras tablas-->
+                <td>hola campers</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>soup</td>
+                <td>20.000</td>
+            </tr>   
+        </tbody>
+        <td></td>
+        <td>45.00$</td>
+       
+        
+    </table>
+    <!-- ul:Lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- ol :Lista  ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-roman;">sub Elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub Elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub Elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+
+
+
+    <!-- get: enviar los valores que se encuentren dentro de los campos atraves de la url -->
+    <form action="/formulario" method="get">
+        <label for="nombre">Nombre</label>
+        <!--Donde el usuario seleccione la pantalla podra agregar el nombre-->
+        <!--name="nombre: cuando enviemos este formulario a algun servidor, el servidor va a interpretar los datos del formulario por el nombre que nosotro le indiquemos, el servidor va a recibir un oBjeto de formulario el cual va a contener una llave  y un valor LA LLAVE va a lo que le indiquemos y el valor va a ser el contenido que va a tener nuestro campo "-->
+        <!--placeholder que tipo de dato  el usuario debe ingresar en input -->
+        <!-- type="submit": se transforma en un boton de enviar -->
+        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <!--salto de linea-->
+        <br>
+        <label for="apellido">apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br>
+        <!--rows:Filas/cols:Columnas-->
+        <label for="comentario">comentario</label>
+        <textarea cols="50" rows="10"  placeholder="Ingrese comentario" name="comentario">este  es un valor por defecto</textarea>
+        <br>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+
+    </form>
+</body>
+</html>
