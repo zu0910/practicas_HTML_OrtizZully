@@ -1,0 +1,47 @@
+<!DOCTYPE html><!-- Declara el tipo de documento como HTML5-->
+<html lang="en"><!-- Inicio del documento -->
+<head><!-- contiene metadatos y enlaces de recursos externos-->
+    <meta charset="UTF-8"><!-- Define la codificacion-->
+    <script src="https://kit.fontawesome.com/67a4c974e8.js" crossorigin="anonymous"></script><!--Se utiliza para cargar el archivo JavaScript de Font Aweaome en mi pag, donde me permitira utilizar los iconos de esa pag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><!-- Enlaza el archivo CSS-->
+    <title>Login</title><!-- Define el titulo de la pag-->
+</head>
+<body><!-- Contenido principal de la pag -->
+    <section><!--Define una seccion del documento, Esta seccion contiene el formulario de inicar sesion-->
+        <div class="contenedor"><!-- Es un contenedor que agrupa todo el contenido del formulario-->
+            <div class="formulario">
+                <form action="#"><!-- Crea un formulario que envia datos al servidor, En este caso, la accion # es un marcador de posicion-->
+                    <h2>Iniciar Sesión</h2><!--Titulo del formulario-->
+
+                    <div class="input-contenedor"><!--Contenedor para un campo de entrada en el formulario-->
+                        <i class="fa-solid fa-envelope"></i><!--Icono del sobre de correo electronico de la pag FontAwesome-->
+                        <input type="email" required><!-- Campo de entrada para el correo electronico del usuario, El atributo requires indica q ese campo es obligatorio llenarlo -->
+                        <label for="#">Email</label><!-- La etiqueta asociada al campo de entrada de correo electronico. Proporciona una descripcion del campo para ayudar al usuario a entender que se espera que ingrese-->
+                    </div>
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" required>
+                        <label for="#">Contraseña</label>
+                    </div>
+
+                    <div class="olvidar"><!-- Contenedor para la opcion olvidar-->
+                        <label for="#">
+                            <input type="checkbox"> Recordar <!--El usuario va poder indicar si desea que el navegador recuerde su informacion-->
+                            <a href="#">Olvidé la contraseña</a><!-- Enlace que lleva al usuario a una pag para recuperar su contraseña-->
+                        </label>
+                    </div>
+
+                </form>
+
+                <div>
+                    <button>Acceder</button><!--Boton para enviar el formulario-->
+                    <div class="registrar">
+                        <p>No tengo cuenta <a href="#">Crear una</a></p><!-- En llegado caso no tenga cuenta tengra la opcion de crearla-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body{
+    font-family: 'Poppins', sans-serif;/* Establece la fuente determinado para todo el contenido del documento */
+    margin: 0;/*Establece el margen exterior del cuerpo de la página en 0 píxeles. Esto elimina cualquier margen predeterminado que el navegador pueda aplicar.*/
+    padding: 0;/*relleno */
+    
+}
+
+section{
+    display: flex;/*Hace que el elemento <section> se comporte como un contenedor flexible. Esto permite que sus elementos secundarios se organicen y alineen fácilmente.*/
+    justify-content: center;/*Centra horizontalmente los elementos secundarios dentro del elemento*/
+    align-items: center;/*Centra verticalmente los elementos secundarios dentro del elemento*/
+    width: 100%;/*Ancho*/
+    min-height: 100vh;/*Establece la altura mínima del elemento, lo que garantiza que el contenido se muestre correctamente en cualquier tamaño de pantalla. */
+    background: url(img/fondo.jpg) no-repeat;/*Establece una imagen de fondo, La propiedad no-repeat evita que la imagen se repita en el fondo.*/
+    background-position: center;/*Centra la imagen de fondo horizontal y verticalmente dentro del elemento*/
+    background-size: cover;/* Escala la imagen de fondo para que cubra completamente el área del elemento, Esto garantiza que la imagen de fondo se ajuste correctamente al tamaño del elemento <section> sin distorsionarla.*/
+    
+}
+.contenedor{
+    position: relative;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, .6);/*borde*/
+    border-radius: 20px;/*redondea las esquinas*/
+    backdrop-filter: blur(15px);/*Esto crea un efecto de desenfoque en el fondo*/
+    height: 450px;/*altura*/
+    display: flex;/* permite alinear sus elementos secundarios horizontalmente.*/
+    justify-content: center;/*horizontal*/
+    align-items: center;/*vertical*/
+}
+.contenedor h2{
+    font-size: 2.3rem;/*significa que el tamaño de fuente del elemento será 2.3 veces el tamaño de fuente del elemento raíz*/
+    color: white;
+    text-align: center;
+}
+.input-contenedor{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid white;/**/
+}
+.input-contenedor label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);/*Aplica una transformación de desplazamiento vertical al elemento <label> para centrarlo verticalmente. Desplaza el elemento hacia arriba en un 50% de su altura, lo que lo centra verticalmente en relación con su contenedor.*/
+    color: white;
+    font-size: 1rem;
+    pointer-events: none;/* Desactiva la interacción del puntero del ratón con el elemento*/
+    transition: .6s;/*Aplica una transición suave de 0.6 segundos*/
+    font-family: bold;
+}
+
+input:focus ~ label,
+input:focus ~ label{
+    top: -5px;/*mueve la etiqueta hacia arriba y crea un efecto de etiqueta flotante cuando el usuario comienza a escribir en el campo de entrada.*/
+}
+
+.input-contenedor input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;/*Elimina el contorno del campo de entrada */
+    font-size: 1rem;
+    padding: - 35px 0 5px;
+    color: white;
+}
+
+.input-contenedor i{
+    position: absolute;
+    color: white;/*color del icono*/
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;/*Posicionar los iconos a la derecja*/
+}
+
+.olvidar{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.olvidar label input{
+    margin: 3px;
+}
+
+.olvidar label a{
+    color: white;
+    text-decoration: none;/* Elimina la decoración de texto (subrayado por defecto) de los enlaces dentro de las etiquetas */
+    transition: .3s;
+    font-size: .9em;
+}
+
+.olvidar label a:hover{
+    text-decoration: underline;/*cuando el cursor del mouse se coloca sobre el enlace, aparecerá un subrayado debajo del texto.*/
+}
+
+button{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;/*Cambia el cursor del mouse a una mano cuando pasa sobre el botón*/
+    font-size: 1rem;
+    transition: .4s;
+}
+
+button:hover{
+    opacity: .5;/*Cuando el cursor del mouse este encima del boton lo que va hacer es opacar el color  */
+}
+
+.registrar{
+    font-size: .8rem;
+    color: white;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.registrar p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.registrar p a:hover{
+    text-decoration: underline;/*cuando el cursor del mouse se coloca sobre el enlace, aparecerá un subrayado debajo del texto.*/
+}
+
